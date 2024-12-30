@@ -1,5 +1,3 @@
-
-
 function loadPage(page) {
   let content = document.getElementById('content');
   content.innerHTML = ''; // Clear previous content
@@ -97,7 +95,7 @@ function rotate() {
 function changeImage(src) {
   document.getElementById('mainImage').src = src;
 }
+function changePrice(src) {
+  document.getElementById('mainPrice').src = src;
+}
 
-
-
- 
