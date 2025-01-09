@@ -45,11 +45,11 @@
           <div>
             <button class="relative">
               <img src="./img/button.png" alt="" class="max-md:w-[150px]" />
-              <p
+              <a href="#" onclick="loadPage('shop')"
                 class="absolute top-1/4 left-1/3 text-teal-600 font-medium max-md:text-xs"
               >
                 Shop Now
-              </p>
+              </a>
             </button>
           </div>
         </div>
@@ -109,7 +109,7 @@
 		</div>
 		<div class="max-w-7xl m-auto px-5 grid grid-cols-2 md:grid-cols-4 gap-8 mt-14">
 			<div class="grid gap-1 border-[3px] shadow-md p-2 rounded-xl">
-				<div>
+				<div onclick="loadPage('products')" onclick="changeImage(this.src)">
 					<img src="./img/products/f1.jpg" alt="" class="rounded-xl">
 				</div>
 				<div>
@@ -132,7 +132,7 @@
 				</div>
 			</div>
 			<div class="grid gap-1 border-[3px] shadow-md p-2 rounded-xl">
-				<div>
+				<div onclick="loadPage('products')" onclick="changeImage(this.src)">
 					<img src="./img/products/f2.jpg" alt="" class="rounded-xl">
 				</div>
 				<div>

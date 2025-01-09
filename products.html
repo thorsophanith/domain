@@ -20,7 +20,7 @@
 </head>
   
   <body>
-    <div class="relative w-full">
+    <div class="relative w-full mt-12">
         <img src="./img/banner/b1.jpg" alt="" class="max-md:opacity-70 w-[100%]" />
           <div class="absolute max-sm:top-7 md:top-20 max-lg:top-1/4 lg:top-1/4 text-center w-full">
             <h1
@@ -44,7 +44,7 @@
         <div class="flex flex-wrap -mx-4">
           <!-- Product Images -->
           <div class="w-full md:w-1/2 px-4 mb-8">
-            <img src="./img/products/f1.jpg" alt="Product"
+            <img  src="./img/products/f1.jpg" alt="Product"
                         class="w-full h-auto rounded-lg shadow-md mb-4" id="mainImage">
             <div class="flex gap-4 py-4 justify-center overflow-x-auto">
               <img src="./img/products/f2.jpg" alt="Thumbnail 1"
@@ -64,10 +64,10 @@
     
           <!-- Product Details -->
           <div class="w-full md:w-1/2 px-4">
-            <h2 class="text-3xl font-bold mb-2">Premium Wireless Headphones</h2>
+            <h2 class="text-3xl font-bold mb-2" id="mainTitle">Premium Wireless Headphones</h2>
             <p class="text-gray-600 mb-4">SKU: WH1000XM4</p>
             <div class="mb-4">
-              <span class="text-2xl font-bold mr-2">$349.99</span>
+              <span class="text-2xl font-bold mr-2" id="price">$349.99</span>
               <span class="text-gray-500 line-through">$399.99</span>
             </div>
             <div class="flex items-center mb-4">
@@ -160,6 +160,9 @@
       </div>
 
 
+ 
+
+
 
                              <!-- Products -->
 
@@ -196,7 +199,7 @@
                                 </div>
                                 <div class="grid gap-1 border-[3px] shadow-md p-2 rounded-xl">
                                   <div>
-                                    <img src="./img/products/f7.jpg" alt="" class="rounded-xl"  onclick="changeImage(this.src)" >
+                                    <img src="./img/products/f7.jpg" alt="" class="rounded-xl"  onclick="changeDetails(this.src)">
                                   </div>
                                   <div>
                                     <section class="flex items-center justify-between">
@@ -428,6 +431,15 @@
                                     </div>
 
 
+                                    <div id="product-details-section" class="hidden p-8">
+                                      <button onclick="backToShop()" class="text-blue-500 underline mb-4">Back to Shop</button>
+                                      <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-lg p-6">
+                                        <img id="product-image" class="w-full h-64 object-cover rounded mb-4" src="" alt="Product Image">
+                                        <h1 id="product-title" class="text-3xl font-bold mb-4"></h1>
+                                        <p id="product-price" class="text-green-600 font-semibold text-lg"></p>
+                                        <p id="product-description" class="text-gray-700 mt-2"></p>
+                                      </div>
+                                    </div>
 
     <script src="./javascript.js"></script>
   </body>
